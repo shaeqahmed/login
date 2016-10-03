@@ -4,12 +4,14 @@
 <body>
 <div class="login-page">
   <div class="form">
-    <form action="authenticate/" method="POST" class="login-form">
+    <form action="/authenticate/" method="POST" class="login-form">
       <input type="text" name="username" placeholder="username"/>
       <input type="password" name="password" placeholder="password"/>
       <button type="submit">login</button>
+      <button type="submit" formaction="/reg/">create</button>
     </form>
   </div>
+{{result}}
 </div>
 </body>    
 </html>

@@ -9,8 +9,11 @@ def home():
 
 @app.route("/authenticate/", methods = ['POST'])
 def authenticate():
-    return render_template("result.html", result = checklogin.usermsg(request.form["username"], request.form["password"]))
+    return render_template("loginpage.html", result = checklogin.userlog(request.form["username"], request.form["password"]))
+
+@app.route("/reg/", methods = ['POST'])
+def reg():
+    return render_template("loginpage.html", result = checklogin.userreg(request.form["username"], request.form["password"]))
 
 if __name__ == '__main__':
-    app.debug = True
     app.run()
