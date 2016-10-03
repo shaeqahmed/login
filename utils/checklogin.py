@@ -1,4 +1,4 @@
-from flask import Markup
+from flask import Markup, request
 import hashlib
 import csv
 
